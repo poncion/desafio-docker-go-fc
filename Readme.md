@@ -1,4 +1,4 @@
-# Desafio Go - Full Cycle
+# Desafio Go com Docker - Full Cycle
 Neste repositório você encontrará o material para o desafio Go, do curso Full Cycle - CodeEducation
 
 O desafio utiliza conceitos de Docker, Golang, git
@@ -28,9 +28,10 @@ docker run poncion/codeeducation
 
 ### Rodando com arquivos do repositório GitHub
 
-No momento em que estiver lendo este artigo, a imagem no docker hub pode já estar fora do ar, entretanto você ainda poderá reproduzir o resultado utilizando os arquivos deste repositório.
-```bash
-docker run --e github='https://github.com/poncion/desafio-docker-go-fc.git'
+No momento em que estiver lendo este artigo a imagem no docker hub pode já estar fora do ar, entretanto você ainda poderá reproduzir o resultado utilizando os arquivos deste repositório.
+```
+docker build https://github.com/poncion/desafio-docker-go-fc.git#main -t desafio-go
+docker run desafio-go
 ```
 
 ### Verificando o tamanho da imagem
